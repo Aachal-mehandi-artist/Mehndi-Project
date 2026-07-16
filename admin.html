@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | Mehndi Art</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">✦ Mehndi Art ✦</div>
+      <h2>Admin Login</h2>
+      <p class="login-sub">Manage your gallery</p>
+      <form id="loginForm">
+        <div class="fg"><input type="email"    id="loginEmail" placeholder="Email" required autocomplete="email"></div>
+        <div class="fg"><input type="password" id="loginPass"  placeholder="Password" required autocomplete="current-password"></div>
+        <div id="loginError" class="error-msg"></div>
+        <button type="submit" class="btn-primary" id="loginBtn">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ADMIN PANEL (shown after login) -->
+  <div id="adminPanel" class="admin-panel" style="display:none">
+
+    <header class="adm-header">
+      <div class="adm-logo">✦ Mehndi Art — Admin</div>
+      <button id="logoutBtn" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+    </header>
+
+    <main class="adm-main">
+
+      <!-- UPLOAD CARD -->
+      <section class="adm-card">
+        <h2><i class="fas fa-cloud-upload-alt"></i> Upload New Image</h2>
+        <form id="uploadForm">
+          <div class="adm-grid">
+            <div>
+              <div class="drop-zone" id="dropZone">
+                <i class="fas fa-image"></i>
+                <p>Drag & drop image here<br>or click to browse</p>
+                <input type="file" id="fileInput" accept="image/*" hidden>
+              </div>
+              <div class="preview-wrap" id="previewWrap" style="display:none">
+                <img id="previewImg" src="" alt="preview">
+                <button type="button" id="clearImg" class="clear-btn"><i class="fas fa-times"></i></button>
+              </div>
+            </div>
+            <div class="upload-fields">
+              <div class="fg"><input type="text" id="imgTitle" placeholder="Design Title *" required></div>
+              <div class="fg">
+                <select id="imgCat" required>
+                  <option value="">Select Category *</option>
+                  <option value="bridal">Bridal</option>
+                  <option value="arabic">Arabic</option>
+                  <option value="indo-arabic">Indo-Arabic</option>
+                  <option value="traditional">Traditional</option>
+                  <option value="simple">Simple / Occasion</option>
+                </select>
+              </div>
+              <div class="fg"><textarea id="imgDesc" rows="3" placeholder="Short description (optional)"></textarea></div>
+              <div id="uploadProgress" class="progress-wrap" style="display:none">
+                <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+                <span id="progressLabel">0%</span>
+              </div>
+              <div id="uploadMsg" class="upload-msg"></div>
+              <button type="submit" class="btn-primary" id="uploadBtn">
+                <i class="fas fa-upload"></i> Upload Image
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <!-- GALLERY MANAGEMENT -->
+      <section class="adm-card">
+        <div class="adm-card-head">
+          <h2><i class="fas fa-images"></i> Manage Gallery</h2>
+          <span id="galleryCount" class="count-badge">0 images</span>
+        </div>
+        <div class="adm-filters">
+          <button class="fil active" data-cat="all">All</button>
+          <button class="fil" data-cat="bridal">Bridal</button>
+          <button class="fil" data-cat="arabic">Arabic</button>
+          <button class="fil" data-cat="indo-arabic">Indo-Arabic</button>
+          <button class="fil" data-cat="traditional">Traditional</button>
+          <button class="fil" data-cat="simple">Simple</button>
+        </div>
+        <div id="adminGallery" class="adm-gallery">
+          <div class="adm-loading"><div class="spinner"></div><p>Loading images…</p></div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- DELETE CONFIRM MODAL -->
+  <div class="modal-bg" id="deleteModal" style="display:none">
+    <div class="modal-box">
+      <h3>Delete Image?</h3>
+      <p>This action cannot be undone.</p>
+      <div class="modal-btns">
+        <button id="cancelDelete" class="btn-ghost">Cancel</button>
+        <button id="confirmDelete" class="btn-danger">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script src="js/config.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>
