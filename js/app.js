@@ -1,20 +1,15 @@
 // ============================================================
-//  SAMPLE GALLERY DATA — shown when Firebase is not configured
-//  Replace these with your own images in the admin panel
+//  GALLERY DATA
+//  To add a photo: put the file in images/gallery/ and add a
+//  line below. category must be one of the filter buttons:
+//  bridal | arabic | indo-arabic | traditional | simple
 // ============================================================
-const SAMPLE_IMAGES = [
-  { id:'s1', url:'https://images.unsplash.com/photo-1590736969596-720e4bfa35a9?w=600&q=80', title:'Bridal Full Hand',       category:'bridal'      },
-  { id:'s2', url:'https://images.unsplash.com/photo-1583391265914-c4a1b72c0b7a?w=600&q=80', title:'Arabic Floral',          category:'arabic'      },
-  { id:'s3', url:'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&q=80', title:'Traditional Design',       category:'traditional' },
-  { id:'s4', url:'https://images.unsplash.com/photo-1611926485963-96d2e8c7cfa3?w=600&q=80', title:'Indo Arabic Bridal',     category:'indo-arabic' },
-  { id:'s5', url:'https://images.unsplash.com/photo-1617529497624-7c8ee93e11b2?w=600&q=80', title:'Simple Occasion',        category:'simple'      },
-  { id:'s6', url:'https://images.unsplash.com/photo-1583391265800-da4a47b6b6de?w=600&q=80', title:'Bridal Back Hand',       category:'bridal'      },
-  { id:'s7', url:'https://images.unsplash.com/photo-1589578527966-fdac0f44566c?w=600&q=80', title:'Arabic Bold Florals',    category:'arabic'      },
-  { id:'s8', url:'https://images.unsplash.com/photo-1583391265914-c4a1b72c0b7a?w=400&q=80', title:'Party Design',          category:'simple'      },
-  { id:'s9', url:'https://images.unsplash.com/photo-1590736969596-720e4bfa35a9?w=400&q=80', title:'Festive Traditional',   category:'traditional' },
-  { id:'s10',url:'https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&q=80', title:'Bridal Feet',              category:'bridal'      },
-  { id:'s11',url:'https://images.unsplash.com/photo-1611926485963-96d2e8c7cfa3?w=400&q=80', title:'Indo Arabic Pattern',  category:'indo-arabic' },
-  { id:'s12',url:'https://images.unsplash.com/photo-1617529497624-7c8ee93e11b2?w=400&q=80', title:'Simple Arabic',        category:'arabic'      },
+const GALLERY_IMAGES = [
+  { id:'g1', url:'images/gallery/bridal-lotus-mandala.jpg',  title:'Bridal Lotus Mandala',   category:'bridal' },
+  { id:'g2', url:'images/gallery/bridal-dulhan-full-arm.jpg', title:'Dulhan Full Arm',       category:'bridal' },
+  { id:'g3', url:'images/gallery/bridal-temple-peacock.jpg',  title:'Temple & Peacock Arm',  category:'bridal' },
+  { id:'g4', url:'images/gallery/traditional-peacock-pair.jpg', title:'Peacock Pair',       category:'traditional' },
+  { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Floral Mandala',   category:'indo-arabic' },
 ];
 
 // ============================================================
@@ -45,12 +40,17 @@ function applyConfig() {
 
   // Text
   set('nav-artist-name', c.name || 'Mehndi Art');
+  set('nav-artist-tagline', c.tagline || '');
   set('footName',        c.name || 'Mehndi Art');
   set('footCopyName',    c.name || 'Mehndi Art');
   set('cWa',             c.phone || '+91 99999 99999');
   set('cPh',             c.phone || '+91 99999 99999');
   set('cIg',             c.instagram || '@mehndiartist');
   set('cLoc',            c.location || 'India');
+  set('exp-years',       c.experience || '');
+
+  const photoEl = document.getElementById('artistPhoto');
+  if (photoEl && c.photo) photoEl.src = c.photo;
 
   // Links
   const waDig = c.phoneDigits || '919999999999';
@@ -147,11 +147,11 @@ async function initGallery() {
     if (typeof USE_FIREBASE !== 'undefined' && USE_FIREBASE && typeof firebase !== 'undefined') {
       galleryItems = await loadFromFirebase();
     } else {
-      galleryItems = SAMPLE_IMAGES;
+      galleryItems = GALLERY_IMAGES;
     }
   } catch(e) {
-    console.warn('Gallery fallback to sample data', e);
-    galleryItems = SAMPLE_IMAGES;
+    console.warn('Gallery fallback to local data', e);
+    galleryItems = GALLERY_IMAGES;
   }
   renderGallery(galleryItems);
   initFilters();
