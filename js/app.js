@@ -11,7 +11,7 @@ const GALLERY_IMAGES = [
   { id:'g4', url:'images/gallery/traditional-peacock-pair.jpg', title:'Peacock Pair',       category:'traditional' },
   { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Floral Mandala',   category:'indo-arabic' },
   { id:'g6', url:'images/gallery/practice.png', title:'Simple',   category:'simple' },
-  { id:'g7', url:'images/gallery/arabic-mehndi.png', title:'Arabic',   category:'arabic' },
+  { id:'g7', url:'images/gallery/arabic-mehndi.png', title:'Archana Devghare',   category:'arabic' },
 ];
 
 // ============================================================
