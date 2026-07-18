@@ -6,7 +6,7 @@
 // ============================================================
 const GALLERY_IMAGES = [
   { id:'g1', url:'images/gallery/bridal-lotus-mandala.jpg',  title:'Bridal Lotus Mandala',   category:'bridal' },
-  { id:'g2', url:'images/gallery/bridal-dulhan-full-arm.png', title:'Dulhan Full Arm',       category:'bridal' },
+  { id:'g2', url:'images/gallery/bridal-dulhan-full-arm.jpg', title:'Dulhan Full Arm',       category:'bridal' },
   { id:'g3', url:'images/gallery/bridal-temple-peacock.jpg',  title:'Temple & Peacock Arm',  category:'bridal' },
   { id:'g4', url:'images/gallery/traditional-peacock-pair.png', title:'Peacock Pair',       category:'traditional' },
   { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Floral Mandala',   category:'indo-arabic' },
