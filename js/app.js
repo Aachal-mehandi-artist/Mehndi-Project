@@ -5,12 +5,12 @@
 //  bridal | arabic | indo-arabic | traditional | simple
 // ============================================================
 const GALLERY_IMAGES = [
-  { id:'g1', url:'images/gallery/bridal-lotus-mandala.jpg',  title:'Bridal Lotus Mandala',   category:'bridal' },
+  { id:'g1', url:'images/gallery/bridal-lotus-mandala.jpg',  title:'Meena Akarte',   category:'bridal' },
   { id:'g2', url:'images/gallery/vrushali kubde.jpg', title:'Vrushali Kubde Arm',       category:'bridal' },
-  { id:'g3', url:'images/gallery/bridal-temple-peacock.jpg',  title:'Temple & Peacock Arm',  category:'bridal' },
-  { id:'g4', url:'images/gallery/traditional-peacock-pair.png', title:'Peacock Pair',       category:'traditional' },
-  { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Floral Mandala',   category:'indo-arabic' },
-  { id:'g6', url:'images/gallery/practice.png', title:'Simple',   category:'simple' },
+  { id:'g3', url:'images/gallery/bridal-temple-peacock.jpg',  title:'Sakshi Baraskar',  category:'bridal' },
+  { id:'g4', url:'images/gallery/traditional-peacock-pair.png', title:'Tanvi Kshirsagar(Peacock Pair)',       category:'traditional' },
+  { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Archana Bodkhe',   category:'indo-arabic' },
+  { id:'g6', url:'images/gallery/practice.png', title:'Megha Tai',   category:'simple' },
   { id:'g7', url:'images/gallery/arabic-mehndi.png', title:'Archana Devghare',   category:'arabic' },
   { id:'g8', url:'images/gallery/Aachal Lokhande.png', title:'Aachal Lokhande',   category:'arabic' },
   { id:'g9', url:'images/gallery/Arpita Didi.png', title:'Arpita Didi',   category:'bridal' },
