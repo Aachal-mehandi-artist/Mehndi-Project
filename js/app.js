@@ -12,6 +12,15 @@ const GALLERY_IMAGES = [
   { id:'g5', url:'images/gallery/indo-arabic-floral-mandala.jpg', title:'Floral Mandala',   category:'indo-arabic' },
   { id:'g6', url:'images/gallery/practice.png', title:'Simple',   category:'simple' },
   { id:'g7', url:'images/gallery/arabic-mehndi.png', title:'Archana Devghare',   category:'arabic' },
+  { id:'g8', url:'images/gallery/Aachal Lokhande.png', title:'Aachal Lokhande',   category:'arabic' },
+  { id:'g9', url:'images/gallery/Arpita Didi.png', title:'Arpita Didi',   category:'bridal' },
+  { id:'g10', url:'images/gallery/Gayatri Taii.png', title:'Gayatri Taii',   category:'traditional' },
+  { id:'g11', url:'images/gallery/Mayuri Tai.png', title:'Mayuri Taii',   category:'traditional' },
+  { id:'g12', url:'images/gallery/Neha Gedam(friend).png', title:'Neha Gedam(friend)',   category:'bridal' },
+  { id:'g13', url:'images/gallery/Neha Tai.png', title:'Neha Taii',   category:'indo-arabic' },
+  { id:'g14', url:'images/gallery/Pallavi Taii.png', title:'Pallavi Taii',   category:'indo-arabic' },
+  { id:'g15', url:'images/gallery/Prapti Bodkhe(Sister).png', title:'Prapti Bodkhe(Sister)',   category:'bridal' },
+  { id:'g16', url:'images/gallery/Priyanka Malpe.png', title:'Priyanka Malpe(sibling)',   category:'arabic' },
 ];
 
 // ============================================================
