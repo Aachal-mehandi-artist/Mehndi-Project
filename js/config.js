@@ -7,8 +7,8 @@ const ARTIST_CONFIG = {
   photo:       "images/artist-aachal.jpg",  // About section photo
   phone:       "+91 96994 11360",     // Phone / WhatsApp number (digits only for links)
   phoneDigits: "919699411360",        // Country code + number, no spaces or +
-  instagram:   "@aachal_mehandi_art_loni",  // Instagram handle
-  instagramUrl:"https://www.instagram.com/aachal_mehandi_art_loni",
+  instagram:   "@achalmehandi_artist_loni",  // Instagram handle
+  instagramUrl:"https://www.instagram.com/achalmehandi_artist_loni",
   facebook:    "",                    // Facebook page URL (leave empty to hide)
   location:    "Near Awdhut Mandir, Loni, Ta. Warud, Dist. Amravati",
   experience:  "2+",                  // Years of experience
