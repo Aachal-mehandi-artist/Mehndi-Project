@@ -21,10 +21,10 @@ const GALLERY_IMAGES = [
   { id:'g14', url:'images/gallery/Pallavi Taii.png', title:'Vidya Pachghare',   category:'indo-arabic' },
   { id:'g15', url:'images/gallery/Prapti Bodkhe(Sister).png', title:'Prapti Bodkhe(Sister)',   category:'bridal' },
   { id:'g16', url:'images/gallery/Priyanka Malpe.png', title:'Priyanka Malpe(sibling)',   category:'arabic' },
-  { id:'g17', url:'images/gallery/Samiksha Wankhade(back side).jpg', title:'Samiksha Wankhade',   category:'arabic' },
-  { id:'g18', url:'images/gallery/Samiksha Wankhade(palm side).jpg', title:'Samiksha Wankhade',   category:'arabic' },
-  { id:'g19', url:'images/gallery/Latika warhokar(palm side).jpg', title:'Latika warhokar',   category:'indo-arabic' },
-  { id:'g20', url:'images/gallery/Latika warhorkar(back side).jpg', title:'Latika warhokar',   category:'indo-arabic' },
+  { id:'g17', url:'images/gallery/Samiksha Wankhade (back side).jpg', title:'Samiksha Wankhade',   category:'arabic' },
+  { id:'g18', url:'images/gallery/Samiksha Wankhade (palm side).jpg', title:'Samiksha Wankhade',   category:'arabic' },
+  { id:'g19', url:'images/gallery/Latika warhokar (palm side).jpg', title:'Latika warhokar',   category:'indo-arabic' },
+  { id:'g20', url:'images/gallery/Latika warhorkar (back side).jpg', title:'Latika warhokar',   category:'indo-arabic' },
 ];
 
 // ============================================================
