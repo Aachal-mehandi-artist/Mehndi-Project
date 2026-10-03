@@ -26,6 +26,10 @@ const GALLERY_IMAGES = [
   { id:'g19', url:'images/gallery/Latika warhokar (palm side).jpg', title:'Latika warhokar(Palm Side)',   category:'indo-arabic' },
   { id:'g20', url:'images/gallery/Tradition_design.jpg', title:'Traditional_design',   category:'traditional' },
   { id:'g21', url:'images/gallery/Arabian_design.jpg', title:'Indo_Arabian',   category:'indo-arabic' },
+  { id:'g22', url:'images/gallery/legdesigne.jpg', title:'Footdesigne',   category:'indo-arabic' },
+  { id:'g23', url:'images/gallery/Indo-arabic.jpg', title:'Indo-arabic',   category:'indo-arabic' },
+  { id:'g24', url:'images/gallery/Simple.jpg', title:'p1',   category:'simple' },
+  { id:'g25', url:'images/gallery/Simple2(1).jpg', title:'P2',   category:'simple' },
   
 ];
 
