@@ -24,7 +24,7 @@ const GALLERY_IMAGES = [
   { id:'g17', url:'images/gallery/Samiksha Wankhade (back side).jpg', title:'Samiksha Wankhade(Back Side)',   category:'arabic' },
   { id:'g18', url:'images/gallery/Samiksha Wankhade (palm side).jpg', title:'Samiksha Wankhade(Palm Side)',   category:'arabic' },
   { id:'g19', url:'images/gallery/Latika warhokar (palm side).jpg', title:'Latika warhokar(Palm Side)',   category:'indo-arabic' },
-  { id:'g20', url:'images/gallery/Tradion_design.jpg', title:'Traditional_design',   category:'traditional' },
+  { id:'g20', url:'images/gallery/Tradition_design.jpg', title:'Traditional_design',   category:'traditional' },
   { id:'g21', url:'images/gallery/Arabian_design.jpg', title:'Indo_Arabian',   category:'indo-arabic' },
   
 ];
