@@ -28,9 +28,22 @@ const GALLERY_IMAGES = [
   { id:'g21', url:'images/gallery/Arabian_design.jpg', title:'Indo_Arabian',   category:'indo-arabic' },
   { id:'g22', url:'images/gallery/legdesigne.jpg', title:'Footdesigne',   category:'indo-arabic' },
   { id:'g23', url:'images/gallery/Indo-arabic.jpg', title:'Indo-arabic',   category:'indo-arabic' },
-  { id:'g24', url:'images/gallery/Simple.jpg', title:'p1',   category:'simple' },
-  { id:'g25', url:'images/gallery/Simple2(1).jpg', title:'P2',   category:'simple' },
-  
+  { id:'g24', url:'images/gallery/Simple.jpg', title:'Simple',   category:'simple' },
+  { id:'g25', url:'images/gallery/Simple2(1).jpg', title:'Simple2',   category:'simple' },
+  { id:'g26', url:'images/gallery/mehndi_art1.jpg', title:'Arabic',   category:'indo-arabic' },
+  { id:'g27', url:'images/gallery/mehndi_art2.jpg', title:'indo-arabic',   category:'bridal' },
+  { id:'g28', url:'images/gallery/mehndi_bridal(2).jpg', title:'Bridal1',   category:'bridal' },
+  { id:'g29', url:'images/gallery/mehndi_bridal2.jpg', title:'bridal2',   category:'bridal' },
+  { id:'g30', url:'images/gallery/mehndi_bridal3.jpg', title:'bridal3',   category:'bridal' },
+  { id:'g31', url:'images/gallery/mehndi_bridal4.jpg', title:'indo-arabic3',   category:'indo-arabic' },
+  { id:'g32', url:'images/gallery/mehndi_bridal7.jpg', title:'indo-arabic2',   category:'indo-arabic' },
+  { id:'g33', url:'images/gallery/mehndi_bridal5.jpg', title:'bridal4',   category:'bridal' },
+  { id:'g34', url:'images/gallery/mehndi_bridal6.jpg', title:'bridal5',   category:'bridal' },
+  { id:'g35', url:'images/gallery/mehndi_bridal8.jpg', title:'bridal6',   category:'bridal' },
+  { id:'g36', url:'images/gallery/mehndi_bridal9.jpg', title:'bridal7',   category:'bridal' },
+  { id:'g37', url:'images/gallery/mehndi_bridal10.jpg', title:'bridal8',   category:'bridal' },
+  { id:'g38', url:'images/gallery/mehndi_bridal11.jpg', title:'traditional',   category:'traditional' },
+  { id:'g39', url:'images/gallery/mehndi_bridal12.jpg', title:'traditional2',   category:'traditional' },
 ];
 
 // ============================================================
